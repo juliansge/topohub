@@ -398,6 +398,7 @@
             <select id="firstLevelDropdown">
                 <option value="" selected>Select a category</option>
                 <!-- Add options for each category in the JSON data -->
+                <option value="enhanced_backbone">Enhanced Backbone</option>
                 <option value="backbone">Backbone</option>
                 <option value="gabriel">Gabriel</option>
                 <option value="sndlib">SNDlib</option>
@@ -490,6 +491,7 @@
 
 <script>
     const topologyCatalog = {
+        'enhanced_backbone': ['cities', 'cities2'],
         'backbone': ['africa', 'africa_nosc', 'americas', 'americas_nosc', 'atlantica', 'eastern', 'eastern_nosc', 'emea', 'emea_nosc', 'eurafrasia', 'eurafrasia_nosc', 'eurasia', 'eurasia_nosc', 'europe', 'europe_nosc', 'north_america', 'north_america_nosc', 'south_america', 'south_america_nosc', 'world'],
         'gabriel': {
             '5': ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'],
@@ -1189,6 +1191,10 @@
 
         function makeTopologyInfo(selectedCategory, selectedTopology) {
             let text = "";
+
+            if (selectedCategory === 'enhanced_backbone') {
+                text += `A graph generated using Topogen.`
+            }
 
             if (selectedCategory.startsWith('gabriel')) {
                 text += `Synthetically generated <b>Gabriel graph</b> with <b>${topologyJSON['graph']['stats']['nodes']}</b> nodes. <a href="https://doi.org/10.2307/2412323" target="_blank">Gabriel graphs</a> closely approximate real optical transport network topologies and realistically model fiber lengths and node degrees, as shown in <a href="https://doi.org/10.1109/ICUMT.2013.6798402" target="_blank">this paper</a>.`
