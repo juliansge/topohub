@@ -815,26 +815,29 @@ def main(topo_names):
         import topohub.backbone
 
         topo_names = {
-            'africa': {'include_continents': ['Africa']},
-            'africa_nosc': {'include_continents': ['Africa']},
-            'americas': {'include_continents': ['North America', 'South America']},
-            'americas_nosc': {'include_continents': ['North America', 'South America']},
-            'atlantica': {'include_continents': ['North America', 'Europe'], 'include_countries': ['Turkey', 'Georgia', 'Cyprus'], 'exclude_countries': ['Russia']},
-            'eastern': {'include_continents': ['Europe', 'Africa', 'Asia', 'Oceania']},
-            'eastern_nosc': {'include_continents': ['Europe', 'Africa', 'Asia', 'Oceania']},
-            'emea': {'include_continents': ['Europe', 'Africa', 'Asia']},
-            'emea_nosc': {'include_continents': ['Europe', 'Africa', 'Asia']},
-            'eurafrasia': {'include_continents': ['Europe', 'Africa', 'Asia']},
-            'eurafrasia_nosc': {'include_continents': ['Europe', 'Africa', 'Asia']},
-            'eurasia': {'include_continents': ['Europe', 'Asia']},
-            'eurasia_nosc': {'include_continents': ['Europe', 'Asia']},
+            #PEASEC
+            #Remove comment if you want to generate Topology for the specific Continent
+
+            #'africa': {'include_continents': ['Africa']},
+            #'africa_nosc': {'include_continents': ['Africa']},
+            #'americas': {'include_continents': ['North America', 'South America']},
+            #'americas_nosc': {'include_continents': ['North America', 'South America']},
+            #'atlantica': {'include_continents': ['North America', 'Europe'], 'include_countries': ['Turkey', 'Georgia', 'Cyprus'], 'exclude_countries': ['Russia']},
+            #'eastern': {'include_continents': ['Europe', 'Africa', 'Asia', 'Oceania']},
+            #'eastern_nosc': {'include_continents': ['Europe', 'Africa', 'Asia', 'Oceania']},
+            #'emea': {'include_continents': ['Europe', 'Africa', 'Asia']},
+            #'emea_nosc': {'include_continents': ['Europe', 'Africa', 'Asia']},
+            #'eurafrasia': {'include_continents': ['Europe', 'Africa', 'Asia']},
+            #'eurafrasia_nosc': {'include_continents': ['Europe', 'Africa', 'Asia']},
+            #'eurasia': {'include_continents': ['Europe', 'Asia']},
+            #'eurasia_nosc': {'include_continents': ['Europe', 'Asia']},
             'europe': {'include_continents': ['Europe'], 'include_countries': ['Turkey', 'Georgia', 'Cyprus'], 'exclude_countries': ['Russia']},
-            'europe_nosc': {'include_continents': ['Europe'], 'include_countries': ['Turkey', 'Georgia', 'Cyprus'], 'exclude_countries': ['Russia']},
-            'north_america': {'include_continents': ['North America']},
-            'north_america_nosc': {'include_continents': ['North America']},
-            'south_america': {'include_continents': ['South America']},
-            'south_america_nosc': {'include_continents': ['South America']},
-            'world': {'include_continents': ['all']}
+            #'europe_nosc': {'include_continents': ['Europe'], 'include_countries': ['Turkey', 'Georgia', 'Cyprus'], 'exclude_countries': ['Russia']},
+            #'north_america': {'include_continents': ['North America']},
+            #'north_america_nosc': {'include_continents': ['North America']},
+            #'south_america': {'include_continents': ['South America']},
+            #'south_america_nosc': {'include_continents': ['South America']},
+            #'world': {'include_continents': ['all']}
         }
 
         for topo_name in topo_names:
@@ -847,7 +850,11 @@ def main(topo_names):
             # if region:
             #     path_data = topohub.backbone.polygon_to_path(region)
             #     background.append(f'<path class="selection" vector-effect="non-scaling-stroke" d="{path_data}"/>\n')
-            BackboneGenerator.save_topo(topo_name, filename=f'data/backbone/{topo_name}', with_plot=True, with_utilization=True, with_path_stats=True, with_topo_stats=True, background=background, scale=0.1, node_filter=lambda n: n['type'] == 'City')
+            #BackboneGenerator.save_topo(topo_name, filename=f'data/backbone/{topo_name}', with_plot=True, with_utilization=True, with_path_stats=True, with_topo_stats=True, background=background, scale=0.1, node_filter=lambda n: n['type'] == 'City')
+            #PEASEC changed location for new topologies to enhanced_backbone
+            BackboneGenerator.save_topo(topo_name, filename=f'data/enhanced_backbone/{topo_name}', with_plot=True,
+                                        with_utilization=True, with_path_stats=True, with_topo_stats=True,
+                                        background=background, scale=0.1, node_filter=lambda n: n['type'] == 'City')
 
 
 if __name__ == '__main__':
