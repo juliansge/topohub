@@ -4,7 +4,7 @@ graph [
   stats [
     nodes 136
     links 164
-    demands 5256
+    demands 2628
     min_degree 1
     avg_degree 2.41
     std_degree 0.82
@@ -18,11 +18,11 @@ graph [
     avg_sdp_num 1.02
     max_sdp_num 2
     avg_sdp_hops 10.19
-    avg_sdp_len 3873.14
+    avg_sdp_len 3883.3
     avg_adp_num 1.66
     max_adp_num 4
-    avg_adp_hops 14.3
-    avg_adp_len 5810.99
+    avg_adp_hops 14.29
+    avg_adp_len 5811.2
   ]
   node [
     id 1869
