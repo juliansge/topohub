@@ -1253,7 +1253,7 @@
             } catch (error) {
                 // Handle errors during fetching and display an error message
                 topoDisplay.style.visibility = null;
-                topoDisplay.innerHTML = "<p>Error loading topology data.</p>";
+                topoDisplay.innerHTML = "<p>Error loading topology data.</p>" + error;
                 topologyInfoParagraph.innerHTML = "Please select a topology from the left sidebar.";
                 topologyPropertiesList.innerHTML = "";
                 trafficModelDropdown.value = 'none';
