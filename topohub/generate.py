@@ -481,7 +481,7 @@ def main(topo_names):
         for nodes_number in range(25, 525, 25):
             start_time = time.time()
             for i in range(10):
-                GabrielGenerator.save_topo(nodes_number, (i * MAX_GABRIEL_NODES) + nodes_number, filename=f'data/gabriel/{nodes_number}/{i}', with_plot=True, with_utilization=True, with_topo_stats=True, with_path_stats=True, scale=5)
+                GabrielGenerator.save_topo(nodes_number, (i * MAX_GABRIEL_NODES) + nodes_number, filename=f'../data/gabriel/{nodes_number}/{i}', with_plot=True, with_utilization=True, with_topo_stats=True, with_path_stats=True, scale=5)
             print(time.time() - start_time)
 
     elif topo_names[0] == 'sndlib':
@@ -522,7 +522,7 @@ def main(topo_names):
                 background = topohub.backbone.generate_map(**topo_names[topo_name])
             else:
                 background = None
-            SNDlibGenerator.save_topo(topo_name, filename=f'data/sndlib/{topo_name}', with_plot=True, with_utilization=True, with_path_stats=True, with_topo_stats=True, background=background, scale=True)
+            SNDlibGenerator.save_topo(topo_name, filename=f'../data/sndlib/{topo_name}', with_plot=True, with_utilization=True, with_path_stats=True, with_topo_stats=True, background=background, scale=True)
 
     elif topo_names[0] == 'topozoo':
 
@@ -799,7 +799,7 @@ def main(topo_names):
             else:
                 background = None
             try:
-                TopoZooGenerator.save_topo(topo_name, filename=f'data/topozoo/{topo_name}', with_plot=True, with_utilization=True, with_path_stats=True, with_topo_stats=True, background=background, scale=True)
+                TopoZooGenerator.save_topo(topo_name, filename=f'../data/topozoo/{topo_name}', with_plot=True, with_utilization=True, with_path_stats=True, with_topo_stats=True, background=background, scale=True)
             except nx.exception.NetworkXNoPath:
                 pass
             except nx.NetworkXError:
@@ -815,6 +815,7 @@ def main(topo_names):
         import topohub.backbone
 
         topo_names = {
+            #backbone_topo_names
             #PEASEC
             #Remove comment if you want to generate Topology for the specific Continent
 
@@ -850,9 +851,9 @@ def main(topo_names):
             # if region:
             #     path_data = topohub.backbone.polygon_to_path(region)
             #     background.append(f'<path class="selection" vector-effect="non-scaling-stroke" d="{path_data}"/>\n')
-            #BackboneGenerator.save_topo(topo_name, filename=f'data/backbone/{topo_name}', with_plot=True, with_utilization=True, with_path_stats=True, with_topo_stats=True, background=background, scale=0.1, node_filter=lambda n: n['type'] == 'City')
+            #BackboneGenerator.save_topo(topo_name, filename=f'../data/backbone/{topo_name}', with_plot=True, with_utilization=True, with_path_stats=True, with_topo_stats=True, background=background, scale=0.1, node_filter=lambda n: n['type'] == 'City')
             #PEASEC changed location for new topologies to enhanced_backbone
-            BackboneGenerator.save_topo(topo_name, filename=f'data/enhanced_backbone/{topo_name}', with_plot=True,
+            BackboneGenerator.save_topo(topo_name, filename=f'../data/enhanced_backbone/{topo_name}', with_plot=True,
                                         with_utilization=True, with_path_stats=True, with_topo_stats=True,
                                         background=background, scale=0.1, node_filter=lambda n: n['type'] == 'City')
 

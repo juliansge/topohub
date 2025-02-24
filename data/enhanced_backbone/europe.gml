@@ -2,27 +2,27 @@ graph [
   name "europe"
   directed 0
   stats [
-    nodes 852
-    links 1287
-    demands 70125
+    nodes 836
+    links 1238
+    demands 129240
     min_degree 1
-    avg_degree 3.02
-    std_degree 1.21
+    avg_degree 2.96
+    std_degree 1.22
     max_degree 10
     gini 0.21
     min_link_len 3.68
-    avg_link_len 135.44
+    avg_link_len 134.43
     max_link_len 1661.78
-    diameter_len 6250.53
-    diameter_hops 39
-    avg_sdp_num 1.07
+    diameter_len 6825.14
+    diameter_hops 40
+    avg_sdp_num 1.05
     max_sdp_num 3
-    avg_sdp_hops 13.17
-    avg_sdp_len 1119.81
-    avg_adp_num 2.73
+    avg_sdp_hops 13.92
+    avg_sdp_len 1257.81
+    avg_adp_num 2.53
     max_adp_num 7
-    avg_adp_hops 16.11
-    avg_adp_len 2914.05
+    avg_adp_hops 16.92
+    avg_adp_len 3025.84
   ]
   node [
     id 6281
@@ -2923,13 +2923,6 @@ graph [
     lat 52.46
   ]
   node [
-    id 1413
-    label "San Sebastián"
-    type "Seacable Landing Point"
-    lon -1.98
-    lat 43.32
-  ]
-  node [
     id 1409
     label "Olbia"
     type "Seacable Landing Point"
@@ -3777,13 +3770,6 @@ graph [
     lat 37.93
   ]
   node [
-    id 1014
-    label "Ordu"
-    type "City"
-    lon 37.88
-    lat 40.98
-  ]
-  node [
     id 1013
     label "Malatya"
     type "City"
@@ -3889,25 +3875,11 @@ graph [
     lat 40.78
   ]
   node [
-    id 988
-    label "Zürich"
-    type "City"
-    lon 8.55
-    lat 47.37
-  ]
-  node [
     id 987
     label "Genève"
     type "City"
     lon 6.15
     lat 46.2
-  ]
-  node [
-    id 986
-    label "Bern"
-    type "City"
-    lon 7.45
-    lat 46.95
   ]
   node [
     id 985
@@ -4190,13 +4162,6 @@ graph [
     lat 47.51
   ]
   node [
-    id 898
-    label "Vladikavkaz"
-    type "City"
-    lon 44.67
-    lat 43.04
-  ]
-  node [
     id 897
     label "Velikiye Luki"
     type "City"
@@ -4295,13 +4260,6 @@ graph [
     lat 54.63
   ]
   node [
-    id 877
-    label "Pyatigorsk"
-    type "City"
-    lon 43.06
-    lat 44.05
-  ]
-  node [
     id 876
     label "Pskov"
     type "City"
@@ -4337,20 +4295,6 @@ graph [
     lat 55.87
   ]
   node [
-    id 862
-    label "Nal’chik"
-    type "City"
-    lon 43.62
-    lat 43.5
-  ]
-  node [
-    id 857
-    label "Maykop"
-    type "City"
-    lon 40.11
-    lat 44.61
-  ]
-  node [
     id 856
     label "Makhachkala"
     type "City"
@@ -4370,20 +4314,6 @@ graph [
     type "City"
     lon 40.93
     lat 57.77
-  ]
-  node [
-    id 850
-    label "Kislovodsk"
-    type "City"
-    lon 42.72
-    lat 43.91
-  ]
-  node [
-    id 849
-    label "Khasavyurt"
-    type "City"
-    lon 46.59
-    lat 43.25
   ]
   node [
     id 847
@@ -4407,13 +4337,6 @@ graph [
     lat 54.71
   ]
   node [
-    id 842
-    label "Groznyy"
-    type "City"
-    lon 45.69
-    lat 43.31
-  ]
-  node [
     id 841
     label "Elista"
     type "City"
@@ -4426,13 +4349,6 @@ graph [
     type "City"
     lon 43.46
     lat 56.24
-  ]
-  node [
-    id 838
-    label "Cherkessk"
-    type "City"
-    lon 42.06
-    lat 44.22
   ]
   node [
     id 837
@@ -5429,13 +5345,6 @@ graph [
     lat 45.75
   ]
   node [
-    id 404
-    label "Tbilisi"
-    type "City"
-    lon 44.83
-    lat 41.69
-  ]
-  node [
     id 403
     label "K'ut'aisi"
     type "City"
@@ -5483,13 +5392,6 @@ graph [
     type "City"
     lon 4.03
     lat 49.25
-  ]
-  node [
-    id 395
-    label "Perpignan"
-    type "City"
-    lon 2.9
-    lat 42.7
   ]
   node [
     id 394
@@ -5595,13 +5497,6 @@ graph [
     type "City"
     lon 0.11
     lat 49.49
-  ]
-  node [
-    id 379
-    label "Grenoble"
-    type "City"
-    lon 5.72
-    lat 45.17
   ]
   node [
     id 378
@@ -5966,13 +5861,6 @@ graph [
     type "City"
     lon 16.37
     lat 48.21
-  ]
-  node [
-    id 38
-    label "Salzburg"
-    type "City"
-    lon 13.04
-    lat 47.8
   ]
   node [
     id 37
@@ -8450,12 +8338,6 @@ graph [
   ]
   edge [
     source 1820
-    target 810
-    type "normal"
-    dist 23.12
-  ]
-  edge [
-    source 1820
     target 1531
     type "normal"
     dist 9.99
@@ -8465,6 +8347,12 @@ graph [
     target 1521
     type "normal"
     dist 22.19
+  ]
+  edge [
+    source 1820
+    target 810
+    type "normal"
+    dist 23.12
   ]
   edge [
     source 1807
@@ -8498,15 +8386,15 @@ graph [
   ]
   edge [
     source 1804
-    target 1533
-    type "normal"
-    dist 67.68
-  ]
-  edge [
-    source 1804
     target 1487
     type "normal"
     dist 35.16
+  ]
+  edge [
+    source 1804
+    target 1533
+    type "normal"
+    dist 67.68
   ]
   edge [
     source 1797
@@ -8672,9 +8560,9 @@ graph [
   ]
   edge [
     source 1771
-    target 1288
+    target 1735
     type "normal"
-    dist 61.26
+    dist 96.66
   ]
   edge [
     source 1771
@@ -8684,21 +8572,21 @@ graph [
   ]
   edge [
     source 1771
-    target 1735
+    target 1288
     type "normal"
-    dist 96.66
-  ]
-  edge [
-    source 1765
-    target 1674
-    type "normal"
-    dist 95.11
+    dist 61.26
   ]
   edge [
     source 1765
     target 1518
     type "normal"
     dist 12.91
+  ]
+  edge [
+    source 1765
+    target 1674
+    type "normal"
+    dist 95.11
   ]
   edge [
     source 1764
@@ -9236,15 +9124,15 @@ graph [
   ]
   edge [
     source 1674
-    target 335
-    type "normal"
-    dist 43.36
-  ]
-  edge [
-    source 1674
     target 1424
     type "normal"
     dist 40.04
+  ]
+  edge [
+    source 1674
+    target 335
+    type "normal"
+    dist 43.36
   ]
   edge [
     source 1661
@@ -9317,12 +9205,6 @@ graph [
     target 876
     type "normal"
     dist 221.03
-  ]
-  edge [
-    source 1643
-    target 1413
-    type "normal"
-    dist 78.05
   ]
   edge [
     source 1643
@@ -9416,15 +9298,15 @@ graph [
   ]
   edge [
     source 1623
-    target 341
-    type "normal"
-    dist 55.59
-  ]
-  edge [
-    source 1623
     target 1289
     type "normal"
     dist 54.69
+  ]
+  edge [
+    source 1623
+    target 341
+    type "normal"
+    dist 55.59
   ]
   edge [
     source 1622
@@ -9458,15 +9340,15 @@ graph [
   ]
   edge [
     source 1609
-    target 1393
-    type "normal"
-    dist 18.09
-  ]
-  edge [
-    source 1609
     target 1608
     type "seacable"
     dist 242.64
+  ]
+  edge [
+    source 1609
+    target 1393
+    type "normal"
+    dist 18.09
   ]
   edge [
     source 1608
@@ -9512,15 +9394,15 @@ graph [
   ]
   edge [
     source 1604
-    target 1415
-    type "seacable"
-    dist 195.33
-  ]
-  edge [
-    source 1604
     target 1071
     type "normal"
     dist 33.94
+  ]
+  edge [
+    source 1604
+    target 1415
+    type "seacable"
+    dist 195.33
   ]
   edge [
     source 1603
@@ -9539,12 +9421,6 @@ graph [
     target 376
     type "normal"
     dist 83.78
-  ]
-  edge [
-    source 1588
-    target 1008
-    type "normal"
-    dist 251.46
   ]
   edge [
     source 1588
@@ -9569,24 +9445,6 @@ graph [
     target 1040
     type "normal"
     dist 3.74
-  ]
-  edge [
-    source 1584
-    target 857
-    type "normal"
-    dist 184.95
-  ]
-  edge [
-    source 1584
-    target 1038
-    type "normal"
-    dist 350.67
-  ]
-  edge [
-    source 1584
-    target 890
-    type "normal"
-    dist 292.57
   ]
   edge [
     source 1583
@@ -9884,15 +9742,15 @@ graph [
   ]
   edge [
     source 1461
-    target 1416
-    type "normal"
-    dist 11.34
-  ]
-  edge [
-    source 1461
     target 959
     type "normal"
     dist 22.36
+  ]
+  edge [
+    source 1461
+    target 1416
+    type "normal"
+    dist 11.34
   ]
   edge [
     source 1445
@@ -9932,15 +9790,15 @@ graph [
   ]
   edge [
     source 1441
-    target 819
-    type "normal"
-    dist 186.39
-  ]
-  edge [
-    source 1441
     target 817
     type "normal"
     dist 203.03
+  ]
+  edge [
+    source 1441
+    target 819
+    type "normal"
+    dist 186.39
   ]
   edge [
     source 1440
@@ -10040,15 +9898,15 @@ graph [
   ]
   edge [
     source 1426
-    target 1424
-    type "normal"
-    dist 36.15
-  ]
-  edge [
-    source 1426
     target 335
     type "normal"
     dist 50.3
+  ]
+  edge [
+    source 1426
+    target 1424
+    type "normal"
+    dist 36.15
   ]
   edge [
     source 1423
@@ -10085,30 +9943,6 @@ graph [
     target 959
     type "normal"
     dist 21.27
-  ]
-  edge [
-    source 1413
-    target 373
-    type "normal"
-    dist 202.8
-  ]
-  edge [
-    source 1413
-    target 961
-    type "normal"
-    dist 206.16
-  ]
-  edge [
-    source 1413
-    target 962
-    type "normal"
-    dist 76.58
-  ]
-  edge [
-    source 1413
-    target 400
-    type "normal"
-    dist 278.44
   ]
   edge [
     source 1409
@@ -10454,27 +10288,27 @@ graph [
   ]
   edge [
     source 1336
-    target 1058
-    type "normal"
-    dist 64.71
-  ]
-  edge [
-    source 1336
     target 1295
     type "normal"
     dist 65.05
   ]
   edge [
     source 1336
-    target 1072
-    type "normal"
-    dist 122.67
-  ]
-  edge [
-    source 1336
     target 1060
     type "normal"
     dist 46.06
+  ]
+  edge [
+    source 1336
+    target 1058
+    type "normal"
+    dist 64.71
+  ]
+  edge [
+    source 1336
+    target 1072
+    type "normal"
+    dist 122.67
   ]
   edge [
     source 1324
@@ -10532,6 +10366,12 @@ graph [
   ]
   edge [
     source 1309
+    target 1051
+    type "normal"
+    dist 16.58
+  ]
+  edge [
+    source 1309
     target 1307
     type "normal"
     dist 19.03
@@ -10541,12 +10381,6 @@ graph [
     target 1305
     type "normal"
     dist 16.0
-  ]
-  edge [
-    source 1309
-    target 1051
-    type "normal"
-    dist 16.58
   ]
   edge [
     source 1308
@@ -11108,12 +10942,6 @@ graph [
   ]
   edge [
     source 1018
-    target 1014
-    type "normal"
-    dist 134.34
-  ]
-  edge [
-    source 1018
     target 1013
     type "normal"
     dist 265.79
@@ -11141,12 +10969,6 @@ graph [
     target 1008
     type "normal"
     dist 227.09
-  ]
-  edge [
-    source 1014
-    target 1007
-    type "normal"
-    dist 281.38
   ]
   edge [
     source 1013
@@ -11227,42 +11049,6 @@ graph [
     dist 166.24
   ]
   edge [
-    source 988
-    target 545
-    type "normal"
-    dist 204.34
-  ]
-  edge [
-    source 988
-    target 389
-    type "normal"
-    dist 76.46
-  ]
-  edge [
-    source 988
-    target 429
-    type "normal"
-    dist 134.23
-  ]
-  edge [
-    source 988
-    target 388
-    type "normal"
-    dist 87.32
-  ]
-  edge [
-    source 987
-    target 548
-    type "normal"
-    dist 209.37
-  ]
-  edge [
-    source 987
-    target 986
-    type "normal"
-    dist 129.53
-  ]
-  edge [
     source 987
     target 405
     type "normal"
@@ -11270,33 +11056,9 @@ graph [
   ]
   edge [
     source 987
-    target 379
-    type "normal"
-    dist 119.87
-  ]
-  edge [
-    source 987
     target 372
     type "normal"
     dist 116.78
-  ]
-  edge [
-    source 986
-    target 372
-    type "normal"
-    dist 113.24
-  ]
-  edge [
-    source 986
-    target 548
-    type "normal"
-    dist 190.26
-  ]
-  edge [
-    source 986
-    target 389
-    type "normal"
-    dist 68.52
   ]
   edge [
     source 985
@@ -11402,12 +11164,6 @@ graph [
   ]
   edge [
     source 970
-    target 400
-    type "normal"
-    dist 231.0
-  ]
-  edge [
-    source 970
     target 961
     type "normal"
     dist 124.69
@@ -11417,12 +11173,6 @@ graph [
     target 964
     type "normal"
     dist 87.44
-  ]
-  edge [
-    source 967
-    target 395
-    type "normal"
-    dist 145.14
   ]
   edge [
     source 966
@@ -11498,21 +11248,9 @@ graph [
   ]
   edge [
     source 928
-    target 37
-    type "normal"
-    dist 134.06
-  ]
-  edge [
-    source 928
     target 327
     type "normal"
     dist 79.08
-  ]
-  edge [
-    source 928
-    target 38
-    type "normal"
-    dist 223.83
   ]
   edge [
     source 928
@@ -11648,12 +11386,6 @@ graph [
   ]
   edge [
     source 905
-    target 853
-    type "normal"
-    dist 186.03
-  ]
-  edge [
-    source 905
     target 891
     type "normal"
     dist 198.66
@@ -11663,6 +11395,12 @@ graph [
     target 867
     type "normal"
     dist 154.88
+  ]
+  edge [
+    source 905
+    target 853
+    type "normal"
+    dist 186.03
   ]
   edge [
     source 903
@@ -11711,30 +11449,6 @@ graph [
     target 832
     type "normal"
     dist 185.56
-  ]
-  edge [
-    source 898
-    target 403
-    type "normal"
-    dist 182.61
-  ]
-  edge [
-    source 898
-    target 862
-    type "normal"
-    dist 99.22
-  ]
-  edge [
-    source 898
-    target 842
-    type "normal"
-    dist 88.28
-  ]
-  edge [
-    source 898
-    target 404
-    type "normal"
-    dist 149.91
   ]
   edge [
     source 897
@@ -11809,18 +11523,6 @@ graph [
     dist 226.33
   ]
   edge [
-    source 886
-    target 838
-    type "normal"
-    dist 91.37
-  ]
-  edge [
-    source 885
-    target 857
-    type "normal"
-    dist 116.19
-  ]
-  edge [
     source 884
     target 846
     type "normal"
@@ -11893,18 +11595,6 @@ graph [
     dist 114.12
   ]
   edge [
-    source 877
-    target 850
-    type "normal"
-    dist 30.99
-  ]
-  edge [
-    source 877
-    target 862
-    type "normal"
-    dist 75.93
-  ]
-  edge [
     source 876
     target 639
     type "normal"
@@ -11953,28 +11643,10 @@ graph [
     dist 33.02
   ]
   edge [
-    source 862
-    target 403
-    type "normal"
-    dist 156.14
-  ]
-  edge [
-    source 856
-    target 849
-    type "normal"
-    dist 80.28
-  ]
-  edge [
     source 856
     target 626
     type "normal"
     dist 574.61
-  ]
-  edge [
-    source 853
-    target 846
-    type "normal"
-    dist 310.51
   ]
   edge [
     source 853
@@ -11983,22 +11655,16 @@ graph [
     dist 364.37
   ]
   edge [
+    source 853
+    target 846
+    type "normal"
+    dist 310.51
+  ]
+  edge [
     source 852
     target 840
     type "normal"
     dist 228.44
-  ]
-  edge [
-    source 850
-    target 838
-    type "normal"
-    dist 63.2
-  ]
-  edge [
-    source 849
-    target 842
-    type "normal"
-    dist 73.07
   ]
   edge [
     source 847
@@ -12104,15 +11770,15 @@ graph [
   ]
   edge [
     source 822
-    target 134
-    type "normal"
-    dist 121.66
-  ]
-  edge [
-    source 822
     target 821
     type "normal"
     dist 91.26
+  ]
+  edge [
+    source 822
+    target 134
+    type "normal"
+    dist 121.66
   ]
   edge [
     source 822
@@ -12626,12 +12292,6 @@ graph [
   ]
   edge [
     source 564
-    target 434
-    type "normal"
-    dist 286.91
-  ]
-  edge [
-    source 564
     target 551
     type "normal"
     dist 81.47
@@ -12703,12 +12363,6 @@ graph [
     dist 166.39
   ]
   edge [
-    source 556
-    target 38
-    type "normal"
-    dist 263.95
-  ]
-  edge [
     source 554
     target 551
     type "normal"
@@ -12728,12 +12382,6 @@ graph [
   ]
   edge [
     source 548
-    target 379
-    type "normal"
-    dist 228.84
-  ]
-  edge [
-    source 548
     target 547
     type "normal"
     dist 44.75
@@ -12749,12 +12397,6 @@ graph [
     target 545
     type "normal"
     dist 47.51
-  ]
-  edge [
-    source 545
-    target 434
-    type "normal"
-    dist 307.46
   ]
   edge [
     source 544
@@ -12980,12 +12622,6 @@ graph [
   ]
   edge [
     source 437
-    target 38
-    type "normal"
-    dist 152.22
-  ]
-  edge [
-    source 437
     target 336
     type "normal"
     dist 329.05
@@ -13031,12 +12667,6 @@ graph [
     target 413
     type "normal"
     dist 51.44
-  ]
-  edge [
-    source 434
-    target 38
-    type "normal"
-    dist 115.61
   ]
   edge [
     source 434
@@ -13244,12 +12874,6 @@ graph [
   ]
   edge [
     source 405
-    target 379
-    type "normal"
-    dist 93.75
-  ]
-  edge [
-    source 405
     target 377
     type "normal"
     dist 136.6
@@ -13277,12 +12901,6 @@ graph [
     target 381
     type "normal"
     dist 77.53
-  ]
-  edge [
-    source 400
-    target 395
-    type "normal"
-    dist 155.02
   ]
   edge [
     source 400
@@ -13351,12 +12969,6 @@ graph [
     dist 147.93
   ]
   edge [
-    source 395
-    target 386
-    type "normal"
-    dist 129.06
-  ]
-  edge [
     source 394
     target 384
     type "normal"
@@ -13391,12 +13003,6 @@ graph [
     target 367
     type "normal"
     dist 94.72
-  ]
-  edge [
-    source 392
-    target 379
-    type "normal"
-    dist 204.0
   ]
   edge [
     source 391
@@ -13697,17 +13303,5 @@ graph [
     target 44
     type "normal"
     dist 114.04
-  ]
-  edge [
-    source 39
-    target 37
-    type "normal"
-    dist 144.54
-  ]
-  edge [
-    source 38
-    target 37
-    type "normal"
-    dist 198.46
   ]
 ]
